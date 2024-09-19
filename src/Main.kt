@@ -29,7 +29,7 @@ fun degat(nombredés:Int, nombrefaces: Int, bonusQualiteArmes: Int,activation: I
         return valeurDegats
 }
 /*exercice 4*/
-fun attque(pv: Int,total: Int,degat: Int,nomAttaque:String,NomCible: String){
+fun attaque(pv: Int,total: Int,degat: Int,nomAttaque:String,NomCible: String){
     var score = degat-total
     var result = 0
     if(score>= 0){
@@ -40,6 +40,7 @@ fun attque(pv: Int,total: Int,degat: Int,nomAttaque:String,NomCible: String){
 
     var difPv=pv-result
 
+    return println("$nomAttaque detruit  $NomCible pour $difPv")
 
 }
 
@@ -48,14 +49,16 @@ fun main(){
     /*exercice 2 et 3 print
     print(déstotal(4,8))
     print(degat(1,6,2,6,2))*/
-}
+    /*exercice 4 print
+    print(attaque(5,2,9,"killian","evan"))*/
+
 /*exercice 1 print
-    /*print(total(3,2,1))
+    print(total(3,2,1))
     assert(total(3,2,1) == 6){
         "Erreur la valeur est de ${total(3,2,1)}"
     }*/
+}
 
- */
-/*exercice 4*/
-print($nomAttaque attaque  $nomCible pour $pv)
+
+
 
