@@ -61,22 +61,22 @@ fun bouleDeFeu(NomCaster: String,NomCible: Int,ScoreattaqueCaster: Int,Scoredefe
 
 val numDice = NomCaster / 3
 
-    // Calculate the total damage dealt
+
     val degat = (1..numDice).sumOf { Random.nextInt(1, 7) } - ScoredefenseTotaleCible
 
-    // Ensure damage is not negative
+
     val dernierdegat = if (degat > 0) degat else 0
 
-    // Store the original HP of the target
+
     val originalHp = NombrepvCible
 
-    // Apply the damage to the target's HP
+
     val newHp = NombrepvCible - dernierdegat
 
-    // Ensure HP does not go below 0
+
     val finalHp = if (newHp > 0) newHp else 0
 
-    // Print the message
+
     println("$NomCaster lance une boule de feu et inflige $dernierdegat points de dégâts à $NomCible.")
 }*/
 
